@@ -1,0 +1,16 @@
+{
+  "name": "expressnodejs",
+  "version": "1.0.0",
+  "description": "This is about learningNodejs",
+  "license": "ISC",
+  "author": "Amrit Reule",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
