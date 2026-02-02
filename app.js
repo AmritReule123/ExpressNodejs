@@ -22,5 +22,20 @@ const person = {
     age: 33,
     hobbies:['Reading', 'Travelling', 'programming']
 }
-console.log(person)
-console.log(person.age)
+// console.log(person)
+// console.log(person.age)
+
+
+
+
+
+
+
+
+const express = require("express");
+const app = require("express")();
+
+app.get("/", (req,res) => {
+    res.send("express is working js");
+})
+app.listen(10000, () => console.log("i am a hacker runnignds.f.sdf.ds,f.sd,f.dsfs nodejs"))
