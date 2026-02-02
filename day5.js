@@ -9,6 +9,6 @@ const app = express();
 
 
 
-app.listen(3000, function(){
-    console.log("this is a java script language server")
+app.listen(3100, function(){
+    console.log("this is a javascript language server")
 })
