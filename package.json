@@ -5,5 +5,24 @@
   "scripts": {
     "start": "node app.js",
     "amrit": "node day5.js"
-  }
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.18.0",
+    "sequelize": "^6.37.7"
+  },
+  "description": "\"# ExpressNodejs\"",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmritReule123/ExpressNodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AmritReule123/ExpressNodejs/issues"
+  },
+  "homepage": "https://github.com/AmritReule123/ExpressNodejs#readme"
 }

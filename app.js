@@ -1,41 +1,29 @@
-console.log("Welocomet ot jss ")
-
-
-
-const a = 4;
-b = 7;
-let SUM = a+ b;
-
-console.log(a + b);
-console.log(SUM);
-
-
-
-// Array
-const numbers = [1,2,3,4,5];
-// console.log(numbers.length)
-// console.log(numbers[2])
-
-// OBJECTS
-const person = {
-    name: "amrit",
-    age: 33,
-    hobbies:['Reading', 'Travelling', 'programming']
-}
-// console.log(person)
-// console.log(person.age)
-
-
-
-
-
-
 
 
 const express = require("express");
-const app = require("express")();
+const app = express();
 
-app.get("/", (req,res) => {
-    res.send("express is working js");
-})
-app.listen(10000, () => console.log("i am a hacker runnignds.f.sdf.ds,f.sd,f.dsfs nodejs"))
+app.use(express.json());
+
+// DB connection
+const db = require("./database/connection");
+
+app.get("/books", (req, res) => {
+  res.json({ message: "books fetched successfully" });
+});
+
+app.post("/books", (req, res) => {
+  res.json({ message: "book added successfully" });
+});
+
+app.delete("/books/:id", (req, res) => {
+  res.json({ message: "Book deleted successfully" });
+});
+
+app.patch("/books/:id", (req, res) => {
+  res.json({ message: "Book updated successfully" });
+});
+
+app.listen(4900, () => {
+  console.log("project/server/backend has started at port 4900");
+});
